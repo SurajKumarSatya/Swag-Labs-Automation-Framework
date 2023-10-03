@@ -4,10 +4,8 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import pageObjects.CartPage;
-import pageObjects.CheckoutPage;
-import pageObjects.ConfirmationPage;
-import pageObjects.OverviewPage;
 import pageObjects.ProductCatalogue;
 import testComponents.BaseTest;
 import testComponents.Retry;

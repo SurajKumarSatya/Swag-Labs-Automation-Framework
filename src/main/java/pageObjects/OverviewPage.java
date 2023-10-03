@@ -15,15 +15,11 @@ public class OverviewPage
 		PageFactory.initElements(driver, this);
 	}
 	
-
-	
 	@FindBy(xpath="//div[@class='summary_info_label summary_total_label']")
 	WebElement totalPrice;
 	
 	@FindBy(id="finish")
 	WebElement finishBtn;
-	
-	
 	
 	public void getPrice()
 	{

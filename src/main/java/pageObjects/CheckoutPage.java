@@ -15,8 +15,6 @@ public class CheckoutPage
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	
 	@FindBy(id="first-name")
 	WebElement firstName;
 	
@@ -28,8 +26,6 @@ public class CheckoutPage
 	
 	@FindBy(id="continue")
 	WebElement continueBtn;
-	
-	
 	
 	public void enterInfo()
 	{

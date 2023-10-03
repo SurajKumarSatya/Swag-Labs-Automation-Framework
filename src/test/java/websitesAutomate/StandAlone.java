@@ -8,8 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import pageObjects.LandingPage;
-
 
 public class StandAlone 
 {
@@ -23,9 +21,7 @@ public class StandAlone
 		driver = new ChromeDriver(options); 
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
-		
-		LandingPage landingPage = new LandingPage(driver);
-		
+				
 		//verify title
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
@@ -49,11 +45,8 @@ public class StandAlone
 		
 		//inventory_item
 	//	List<WebElement> productNames = driver.findElements(By.className("inventory_item"));
-
-		System.out.println("4");
-		
-		//filtering the products
-		
+	
+		//filtering the products	
 //		for (WebElement webElement : productNames) {
 //			String name = webElement.getText();
 //			System.out.println(name);
@@ -69,10 +62,7 @@ public class StandAlone
 		//  product --> whatever the stream() gave as the output in the first iteration, it will be stored in the product (you can change the name according to you)
 			
 			prod.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']")).click();
-			
-//		}
-		System.out.println("6");
-		
+	
 		//clicking the cart icon
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 		

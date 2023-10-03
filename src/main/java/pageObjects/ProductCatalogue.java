@@ -64,10 +64,8 @@ public class ProductCatalogue
 	public void addToCartButton(String productName)
 	{
 		WebElement prod = getProductByName(productName);
-		//prod.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']")).click();
 		//addToCartButton.click();
-		prod.findElement(addToCart).click();
-		
+		prod.findElement(addToCart).click();	
 	}
 	
 	public CartPage clickCartIcon()
@@ -77,5 +75,4 @@ public class ProductCatalogue
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
 	}
-
 }
